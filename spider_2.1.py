@@ -1,6 +1,5 @@
 ﻿#!/usr/bin/env Python
 # coding=utf-8
-import urllib.request as urllib
 import requests, re, operator
 from bs4 import BeautifulSoup
 # from functools import reduce #列表去重已经优化
