@@ -8,7 +8,9 @@
 4月16号——spider_2.1.py
 在上一次知道爬取的流程后对2.0进行改良，通过结合Beautifulsoup库查找对应的内容，查找更准确
 
-4月19号——把之前看的CDSN博客里的mzitu反扒取功能添加，
+4月19号——把之前看的CDSN博客里的mzitu反扒取功能添加
+
 getip.py——http://www.xicidaili.com/wt/ 代理服务器可用列表，每次选取其中几页开始选定可用的
 国内代理的匿名服务器进行对应网页访问
+
 download.py——利用getip得到的代理服务器ip，重对request函数进行后改良，添加代理功能
