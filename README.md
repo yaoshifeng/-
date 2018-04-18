@@ -14,3 +14,5 @@ getip.py——http://www.xicidaili.com/wt/ 代理服务器可用列表，每次�
 国内代理的匿名服务器进行对应网页访问
 
 download.py——利用getip得到的代理服务器ip，重对request函数进行后改良，添加代理功能
+
+4月22号——预计将提取的数据存储到mysql中 并设计mysql库
