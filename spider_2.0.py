@@ -44,7 +44,7 @@ class sql():
         )
         self.cur.close()
         return
-
+  
     def addNoveltoMYSQL(self, str_bookid, str_channelname, str_bookname, str_author):
         self.cur.execute(
             "insert into " \
