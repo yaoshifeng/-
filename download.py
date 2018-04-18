@@ -4,7 +4,7 @@ import requests
 import re
 import random
 import time
-import sys
+import sys    
 from getip import get_ip
 url = 'http://www.xicidaili.com/wt/'
 headers = {
