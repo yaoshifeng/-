@@ -6,9 +6,8 @@ from bs4 import BeautifulSoup
 # from functools import reduce #列表去重已经优化
 from enum import Enum, IntEnum, unique
 from download import request
-from connect_mysql import sql
 
-
+#为添加数据库定义的枚举
 @unique
 class Novel_Type(IntEnum):
     XUANHUAN =  1   #玄幻魔法
@@ -23,6 +22,7 @@ class Novel_Type(IntEnum):
     KEHUAN   = 10   #科幻小说
     MEIWEN   = 11   #没问名著
 
+#为添加数据库定义的枚举
 @unique
 class Novel_Info(IntEnum):
     ID     = 0
@@ -90,7 +90,7 @@ def getChapterCenter(url):
     return re.findall(r, html, re.S)
 
 def getNovelInformation(url):
-    print("成功进来了:", url)
+    # print("成功进来了:", url)
     html = getHTMLText(url, code="gbk")
     soup = BeautifulSoup(html, 'html.parser')
     img_url = soup.find_all('meta', property="og:image")[0].attrs['content']
@@ -116,7 +116,6 @@ def getNovelInformation(url):
 
 
 if __name__ == '__main__':
-    mysql = sql
     try:
         for i in getTypeUrl(url): #捕获12个小说类型的url
             print("novel_url_type: ", i)
