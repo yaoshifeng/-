@@ -33,6 +33,6 @@ update 4月20号 —— upload spider 3.0 ——即日起更新用英语，显�
   
 6.get information return a list, is easy to add the connect mysql function
 
-※A Danger Bug——crawd 1,2,3,4,6 page, novels with repetition ,maybe novel_url has some issues.
+※A Dangerious Bug——crawd 1,2,3,4,6 page, novels with repetition ,maybe novel_url has some issues.
 
 4月22号——预计将提取的数据存储到mysql中 并设计mysql库——to be continued...
