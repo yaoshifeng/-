@@ -15,4 +15,15 @@ getip.py——http://www.xicidaili.com/wt/ 代理服务器可用列表，每次�
 
 download.py——利用getip得到的代理服务器ip，重对request函数进行后改良，添加代理功能
 
-4月22号——预计将提取的数据存储到mysql中 并设计mysql库
+update 4月20号 —— upload spider 3.0 ——即日起更新用英语，显得高大尚，hhhhhhh
+1.select lots of crawling code encapsulated as a class in paqu.py file to make main code cleaner
+2.add paqu.py encapsulated code as a Spider() class
+3.add Novel_Type ENUM and Novel_Info ENUM to make code more understanding
+4.add multithreading to crawl the www.quanshuwang.com
+5.add save_pic function
+  can save all novel pictures in the path
+  every novel has their own folder to save picture(now just save picture...)
+6.get information return a list, is easy to add the connect mysql function
+
+
+4月22号——预计将提取的数据存储到mysql中 并设计mysql库——to be continued...
