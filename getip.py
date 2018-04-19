@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import threading
-import time  
+import time
 import random
 import socket
 
@@ -52,8 +52,8 @@ def get_ip(url, headers, ip_list=[]):
 def test(ip):
     socket.setdefaulttimeout(5) #设置全局超时时间
     url = "http://www.mzitu.com/xinggan/"  # 打算爬取的网址
+    proxy = {'http': ip}
     try:
-        proxy = {'http':ip }
         proxy_support = urllib.request.ProxyHandler
         opener = urllib.request.build_opener(proxy_support)
         opener.addheaders = [("User-Agent",
@@ -66,7 +66,6 @@ def test(ip):
         print(proxy, "is OK")
         ip_ok.append(proxy)
         lock.release()
-
     except Exception as e:
         lock.acquire()
         print(proxy, "is EOR")

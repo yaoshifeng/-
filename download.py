@@ -1,11 +1,10 @@
 #!/usr/bin/env Python
 # coding=utf-8
 import requests
-import re
 import random
 import time
-import sys    
 from getip import get_ip
+
 url = 'http://www.xicidaili.com/wt/'
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
@@ -86,6 +85,7 @@ class download:
                 else:
                     print('代理失败，正在重试')
                     return self.get(url, 3)
+
 
 request = download()
 
