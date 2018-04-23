@@ -62,25 +62,25 @@ when I use multithreading to crawl.
 
 2.Configure the mysql information:  
 
-  host 	= "localhost"
+       host 	= "localhost"
 
-  port 	= 3306
+       port 	= 3306
 
-  user 	= "root"
+       user 	= "root"
 
-  passwd 	= ""
+       passwd 	= ""
 
-  db   	= "novel_information_list"
+       db   	= "novel_information_list"
 
-  charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
+       charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
 
 ※Well, you can configure anything you like, don't forget to revise the paqu.py code
 
 3.Create table
 
-|——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
+     |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
 
-`——one novel_information_list table.
+     `——one novel_information_list table.
 
 novel_informtaion_list:
 
