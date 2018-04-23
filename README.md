@@ -134,7 +134,7 @@ Finally:
      
      It's no way insert too many in list. And I just create one threading.lock, 
      
-     it's impossible to rob resources. 
+     it's impossible to rob resources. 
      
      If I can handle it, I'll resive it soon, or PLEASE HELP ME. Thank you!
             
