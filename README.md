@@ -55,58 +55,56 @@ Second:A big problem: in spider3.0, I just show the novel the latest novel conte
 
 Third: My pride——saving all novel information in Mysql
 
-     if you want to run and see:
-     
-     1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors 
-       when I use multithreading to crawl.
-    
-    
-     2.Configure the mysql information:  
-     
-          host 	= "localhost"
-          
-          port 	= 3306
-          
-          user 	= "root"
-          
-          passwd 	= ""
-          
-          db   	= "novel_information_list"
-          
-          charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
-          
-	※Well, you can configure anything you like, don't forget to revise the paqu.py code
-       
-       
-     3.Create table
-     
-       |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
-    
-       `——one novel_information_list table.
-       
-       novel_informtaion_list:
-       
-            novel_id  (type = char, len=8, Not NULL, PRIMARY, Default 10000) 
-            
-            type      (type = shortint, len=2)
-            
-            novel_name(type = varchar, len 64)
-            
-            serialize (type = tinyint, len 1)
-            
-            author    (type = varchar, len=60)
-            
-            summary   (type = varchar, len=255)(I forget to code it, Forgive it)
-        
-        chapter_(type_num)_list:
-               
-             novel_id          (type = int, len = 11(whatever it's ok to enough), NOT ULL, PRIMARY)
-             
-             novel_name        (type = varchar, len = 50)
-             
-             novel_chapter_name(type = varchar, len = 50)
-             
-             chapter_content   (type = longtext)
+if you want to run and see:
+
+1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors 
+when I use multithreading to crawl.
+
+2.Configure the mysql information:  
+
+  host 	= "localhost"
+
+  port 	= 3306
+
+  user 	= "root"
+
+  passwd 	= ""
+
+  db   	= "novel_information_list"
+
+  charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
+
+※Well, you can configure anything you like, don't forget to revise the paqu.py code
+
+3.Create table
+
+|——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
+
+`——one novel_information_list table.
+
+novel_informtaion_list:
+
+    novel_id  (type = char, len=8, Not NULL, PRIMARY, Default 10000) 
+
+    type      (type = shortint, len=2)
+
+    novel_name(type = varchar, len 64)
+
+    serialize (type = tinyint, len 1)
+
+    author    (type = varchar, len=60)
+
+    summary   (type = varchar, len=255)(I forget to code it, Forgive it)
+
+chapter_(type_num)_list:
+
+     novel_id          (type = int, len = 11(whatever it's ok to enough), NOT ULL, PRIMARY)
+
+     novel_name        (type = varchar, len = 50)
+
+     novel_chapter_name(type = varchar, len = 50)
+
+     chapter_content   (type = longtext)
             
               
             
