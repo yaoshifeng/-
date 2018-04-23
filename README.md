@@ -35,4 +35,79 @@ update 4月20号 —— upload spider 3.0 ——即日起更新用英语，显�
 
 ※A Dangerious Bug——crawd 1,2,3,4,6 page, novels with repetition ,maybe novel_url has some issues.
 
-4月22号——预计将提取的数据存储到mysql中 并设计mysql库——to be continued...
+4月22号——预计将提取的数据存储到mysql中 并设计mysql库
+
+April 23rd
+
+I'm sorry to late for update the file
+
+Because there are some issues in my own computer.
+
+I ghost my computer, all my work environment applications are lost... let me cry in 5 seconds.
+
+now I finish my own first beyond a thousand lines project.
+
+let me say what I update:
+
+First:Add error handling， in spider3.0, all the function has no error handling. And make me carry because of adding the mysql function, always said something wrong with the project and can't write in mysql. so I add lots of error handling, and the paqu.py beyond 400 lines, Brilliant!!!Finally I find it's a proxy server problem!!! What the ***
+
+Second:A big problem: in spider3.0, I just show the novel the latest novel content, so I crawl the whole novel.
+
+Third: My pride——saving all novel information in Mysql
+
+     if you want to run and see:
+     
+     1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors when I use multithreading to crawl.
+    
+     2.configure the mysql information:
+          
+          host = "localhost"
+          
+          port = 3306
+          
+          user = "root"
+          
+          passwd = ""(null, do not write anything please)
+          
+          db   = "novel_information_list"
+          
+          charset = "utf8"(dot write "utf-8", this error I find 3 hours...)
+          
+          ※Well, you can configure anything you like, don't forget to revise the paqu.py code
+      
+     3.create table
+    
+       |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
+       |
+       `——one novel_information_list table.
+       
+       novel_informtaion_list:
+       
+            novel_id  (type = char, len=8, Not NULL, PRIMARY, Default 10000) 
+            
+            type      (type = shortint, len=2)
+            
+            novel_name(type = varchar, len 64)
+            
+            serialize (type = tinyint, len 1)
+            
+            author    (type = varchar, len=60)
+            
+            summary   (type = varchar, len=255)(I forget to code it, Forgive it)
+        
+        chapter_(type_num)_list:
+               
+             novel_id          (type = int, len = 11(whatever it's ok to enough), NOT ULL, PRIMARY)
+             
+             novel_name        (type = varchar, len = 50)
+             
+             novel_chapter_name(type = varchar, len = 50)
+             
+             chapter_content   (type = longtext)
+            
+              
+            
+            
+        
+        
+       
