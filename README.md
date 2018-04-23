@@ -63,19 +63,19 @@ Third: My pride——saving all novel information in Mysql
     
      2.Configure the mysql information:  
      
-          host = "localhost"
+          host 	= "localhost"
           
-          port = 3306
+          port 	= 3306
           
-          user = "root"
+          user 	= "root"
           
-          passwd = ""(null, do not write anything please)
+          passwd 	= ""
           
-          db   = "novel_information_list"
+          db   	= "novel_information_list"
           
-          charset = "utf8"(dot write "utf-8", this error I find 3 hours...)
+          charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
           
-          ※Well, you can configure anything you like, don't forget to revise the paqu.py code
+	※Well, you can configure anything you like, don't forget to revise the paqu.py code
        
        
      3.Create table
