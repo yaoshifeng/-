@@ -59,6 +59,7 @@ Third: My pride——saving all novel information in Mysql
      
      1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors when I use multithreading to crawl.
     
+    
      2.configure the mysql information:
           
           host = "localhost"
@@ -75,7 +76,9 @@ Third: My pride——saving all novel information in Mysql
           
           ※Well, you can configure anything you like, don't forget to revise the paqu.py code
       
+      
      3.create table
+    
     
        |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
     
