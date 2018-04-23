@@ -57,10 +57,10 @@ Third: My pride——saving all novel information in Mysql
 
      if you want to run and see:
      
-     1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors when I use multithreading to crawl.
+     1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors 
+       when I use multithreading to crawl.
     
-    
-     2.configure the mysql information:
+     2.Configure the mysql information:
           
           host = "localhost"
           
@@ -75,9 +75,8 @@ Third: My pride——saving all novel information in Mysql
           charset = "utf8"(dot write "utf-8", this error I find 3 hours...)
           
           ※Well, you can configure anything you like, don't forget to revise the paqu.py code
-      
-      
-     3.create table
+       
+     3.Create table
     
     
        |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
