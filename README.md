@@ -43,7 +43,7 @@ I'm sorry to late for update the file
 
 Because there are some issues in my own computer.
 
-I ghost my computer, all my work environment applications are lost... Let me cry in 5 seconds.
+I ghost my computer, all my work environment applications are lost... Make me cry for five seconds. .
 
 Now I finish my own first beyond one thousand lines project.
 
