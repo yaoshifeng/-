@@ -78,9 +78,7 @@ Third: My pride——saving all novel information in Mysql
      3.create table
     
        |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
-       
-       |
-       
+    
        `——one novel_information_list table.
        
        novel_informtaion_list:
