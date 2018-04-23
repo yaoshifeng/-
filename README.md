@@ -130,7 +130,7 @@ Finally:
      
      First, I don't know the reason Why page 1,2,3,4 always crawl repeat... And 6,7,8,9,10,11 is good.
      
-     Second, I don't know the reason Why crawl about a half it will stop to write in Mysql, It's now way insert too many in list,
+     Second, I don't know the reason Why crawl about a half it will stop to write in Mysql, It's no way insert too many in list,
      
      if I can handle it, I'll resive it soon, or Please help me. Thank you!
             
