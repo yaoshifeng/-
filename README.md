@@ -52,15 +52,21 @@ Let me say what I update:
 First:Add error handling
 
      In spider3.0, all the function has no error handling. 
+     
      And make me carry because of adding the mysql function. 
+     
      Always said something wrong with the project and can't write in mysql. 
+     
      So I add lots of error handling, and the paqu.py beyond 400 lines, Brilliant! 
+     
      Finally I find it's a proxy server problem! What the ***
 
 Second:A big problem
 
      In spider3.0, I just show the novel the latest novel content, 
+     
      All right it's my question,
+     
      So I crawl the whole novel.
 
 Third: My pride——Saving all novel information in Mysql
