@@ -70,57 +70,6 @@ Second:A big problem
      So I crawl the whole novel.
 
 Third: My pride——Saving all novel information in Mysql
-
-if you want to run and see:
-
-1.Mysql, Please setup The authority application, I setup a piracy and always said 99 errors 
-when I use multithreading to crawl.
-
-2.Configure the mysql information:  
-
-       host 	= "localhost"
-
-       port 	= 3306
-
-       user 	= "root"
-
-       passwd 	= ""
-
-       db   	= "novel_information_list"
-
-       charset 	= "utf8"(dot write "utf-8", this error I find 3 hours...)
-
-※Well, you can configure anything you like, don't forget to revise the paqu.py code
-
-3.Create table
-
-     |——eleven chapter_(type_num)_list tables.for Example: chapter_1_list
-
-     `——one novel_information_list table.
-
-novel_informtaion_list:
-
-    novel_id  (type = char, len=8, Not NULL, PRIMARY, Default 10000) 
-
-    type      (type = shortint, len=2)
-
-    novel_name(type = varchar, len 64)
-
-    serialize (type = tinyint, len 1)
-
-    author    (type = varchar, len=60)
-
-    summary   (type = varchar, len=255)(I forget to code it, Forgive it)
-
-chapter_(type_num)_list:
-
-     novel_id          (type = int, len = 11(whatever it's ok to enough), NOT ULL, PRIMARY)
-
-     novel_name        (type = varchar, len = 50)
-
-     novel_chapter_name(type = varchar, len = 50)
-
-     chapter_content   (type = longtext)
             
 Finally:  
 
@@ -137,7 +86,19 @@ Finally:
      it's impossible to rob resources. 
      
      If I can handle it, I'll resive it soon, or PLEASE HELP ME. Thank you!
-            
-        
-        
-       
+         
+Good News! Good News!
+
+In April 25th
+
+The Big Problem, the question about the reason Why crawl about a half it will stop to write in Mysql has been solved!
+
+I find plenty of forums about it and find the reason
+
+     Because I created too many threads... Although just one lock but too many threads. So I update a Queue and a pool
+     
+     to limit it...Well, you can change the number of Thread running by MAX_PUEUE, default 20!
+     
+OK, Just the last question, I can gress I can add a "reduce" to check up the list of IP avoidance of repetition.
+
+But I'm Too Busy Now... my work has lots of missions to do. So see you next time...
