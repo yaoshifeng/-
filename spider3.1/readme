@@ -14,7 +14,7 @@ update 4月20号 —— upload spider 3.0 ——即日起更新用英语，显�
 5.add save_pic function
 
      can save all novel pictures in the path
-  
+
      every novel has its own folder to save pictures(now just save pictures...)
   
 6.get information return a list, is easy to add the connect mysql function
